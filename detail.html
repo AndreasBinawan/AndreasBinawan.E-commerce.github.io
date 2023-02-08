@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" class="logo">
+        <div class=" bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bxs-user-circle' ></i></a>
+            <a href="#"><i class='bx bxs-shopping-bag'></i></a>
+        </div>
+    </header>
+
+    <!-- Product Detail -->
+    <section class="product" id="product">
+        <div class="product-page-container">
+
+            <!-- Link route -->
+            <span class="link-route">
+            <a href="index.html">Home</a> > <a href="#">Product 1</a>
+            </span>
+            <!-- Product detail-section -->
+            <section id="product-page">
+                <!-- Image -->
+                <div class="product-page-image">
+                    <img src="images/gambar1.jpg">
+                </div>
+                <!-- Details -->
+                <div class="product-page-details">
+                    <!-- Title -->
+                    <strong>Product 1</strong>
+                    <span class="product-category">
+                        Women - Dress
+                    </span>
+                    <!-- Price -->
+                    <span class="price">Rp90.000,00 <p>Rp112.500,00</p></span>
+                    <!-- Details -->
+                    <p class="small-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo iure quaerat at ut temporibus maxime, et vel, assumenda aut architecto magni numquam molestiae laboriosam asperiores ad a veritatis voluptas quam laborum nemo! Impedit,amet
+                        necessitatibus? Ex itaque natus, fuga, excepturi maxime totam fugiat odit tempora perspiciatis exercitationem magnam inventore rerum.</p>
+
+
+                    <!-- Options -->
+                    <div class="product-option">
+                        <span>Color</span>
+                        <!-- Color option container -->
+                        <div class="product-color-option">
+                            <!-- color-box -->
+                            <div class="product-color-box">
+                                <input type="checkbox" id="blue" value="blue" />
+                                <label for="blue">
+                                <img src="images/blue.png" />
+                            </label>
+                            </div>
+
+                            <!-- color-box -->
+                            <div class="product-color-box">
+                                <input type="checkbox" id="red" value="red" />
+                                <label for="red">
+                                <img src="images/red.jpg" />
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Discount -->
+                    <span class="product-page-discount"><i class='bx bxs-purchase-tag-alt'></i>20% Discount</span>
+
+                    <!-- Cart Buttons -->
+                    <div class="cart-buttons">
+                        <a href="#" class="add-cart">Add to Cart</a>
+                        <a href="#" class="add-cart buy-now">Buy Now</a>
+                    </div>
+                    <!-- Free Shipping -->
+                    <div class="price-shipping">
+                        <strong> Rp90.000,00 <span> + Ongkir (Rp10.000,00) </span></strong>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright &copy; 2022</p>
+    </div>
+
+
+
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript">
+        //only one color select
+        $(document).ready(function() {
+            $('input:checkbox').click(function() {
+                $('input:checkbox').not(this).prop('checked', false);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
